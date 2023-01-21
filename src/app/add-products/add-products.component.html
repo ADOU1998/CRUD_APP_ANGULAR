@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="md-col-12"><h1>AJOUTER UN PRODUIT</h1></div>
+    </div>
+
+    <!-- Formulaire ajout -->
+    <form [formGroup]="addForm" (ngSubmit)="postdata(addForm)" autocomplete="off">
+        <div class="row">
+            <div class="col-md-12">
+                <label for="NOM">NOM</label>
+                <input type="text" name="name" formControlName="name" id="" class="form-control">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <label for="">DESCRIPTION</label>
+                <input type="text" name="description" formControlName="description" id="" class="form-control">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <label for="">PRIX</label>
+                <input type="text" name="price" formControlName="price" id="" class="form-control">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <label for="">MARQUE</label>
+                <input type="text" name="brand" formControlName="brand" id="" class="form-control">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="submit" name="submit" value="ENVOYER" id="" class="btn btn-success btn-lg">
+            </div>
+        </div>
+    </form>
+</div>
